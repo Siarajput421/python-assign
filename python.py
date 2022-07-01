@@ -123,15 +123,15 @@
 # print(new_string("IsOld"))
 
 # #20.program to get a string which is n (non-negative integer) copies of a given string
-def myint(str,n):
-     result = ""
-     for i in range(n):
-        result= result+str
-     return result
-print(myint("Anu",2))
-print(myint("Radha",3))
+# def myint(str,n):
+#      result = ""
+#      for i in range(n):
+#         result= result+str
+#      return result
+# print(myint("Anu",2))
+# print(myint("Radha",3))
 
-# #21.program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user
+# 21.program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user
 #  n=int(input("enter number"))
 #  if n%2 == 0:
 #      print("Even number")
@@ -149,7 +149,7 @@ print(myint("Radha",3))
 # 22.
 # 23.
 
-# #24.program to test whether a passed letter is a vowel or not
+# 24.program to test whether a passed letter is a vowel or not
 #  n=input("enter word")
 #  list=['a','i','e','o','u']
 #  if n in list:
