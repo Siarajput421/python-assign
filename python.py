@@ -146,7 +146,6 @@
 #     return count
 # print(myfunc([1,3,2,4,5,6,4,4]))
 
-# 22.
 # 23.
 
 # 24.program to test whether a passed letter is a vowel or not
@@ -156,3 +155,124 @@
 #     print("yes it,s a vowel")
 #  else:
 #     print("not")
+
+#25. Write a Python program to check whether a specified value is contained in a group of values.
+# def is_group_member(group_data, n):
+#    for value in group_data:
+#        if n == value:
+#            return True
+#    return False
+# print(is_group_member([1, 5, 8, 3], 3))
+# print(is_group_member([5, 8, 3], -1))
+
+#26. Write a Python program to create a histogram from a given list of integers.
+# def histogram( items ):
+#     for n in items:
+#         output = ''
+#         times = n
+#         while( times > 0 ):
+#           output += '*'
+#           times = times - 1
+#         print(output)
+# histogram([2, 7, 5, 6])
+
+#27. Write a Python program to concatenate all elements in a list into a string and return it
+# def concatenate_list_data(list):
+#     result= ''
+#     for element in list:
+#         result += str(element)
+#     return result
+# print(concatenate_list_data([4, 5, 12, 6]))
+
+#28. Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence
+# numbers = [
+    # 386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+    # 399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+    # 815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+    # 958,743, 527
+    # ]
+    #
+# numbers = [
+#     386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,
+#     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,
+#     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,
+#     958,743, 527
+#     ]
+# for x in numbers:
+#     if x == 237:
+#         print(x)
+#         break;
+#     elif x % 2 == 0:
+#         print(x)
+
+#29. Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2
+# color_list_1 = set(["White", "Black", "Red"])
+# color_list_2 = set(["Red", "Green"])
+# color_list_1 = set(["White", "Black", "Red"])
+# color_list_2 = set(["Red", "Green"])
+# print("Original set elements:")
+# print(color_list_1)
+# print(color_list_2)
+# print("\nDifferenct of color_list_1 and color_list_2:")
+# print(color_list_1.difference(color_list_2))
+# print("\nDifferenct of color_list_2 and color_list_1:")
+# print(color_list_2.difference(color_list_1))
+
+#30. Write a Python program that will accept the base and height of a triangle and compute the area.
+# b = int(input("Input the base : "))
+# h = int(input("Input the height : "))
+# area = b*h/2
+# print("area = ", area)
+
+#33. Write a Python program to sum of three given integers. However, if two values are equal sum will be zero
+# def sum_three(x, y, z):
+#     if x == y or y == z or x==z:
+#         sum = 0
+#     else:
+#         sum = x + y + z
+#     return sum
+# print(sum_three(2, 1, 2))
+# print(sum_three(3, 2, 2))
+# print(sum_three(2, 2, 2))
+# print(sum_three(1, 2, 3))
+
+#34. Write a Python program to sum of two given integers. However, if the sum is between 15 to 20 it will return 20.
+# def sum(x, y):
+#     sum = x + y
+#     if sum in range(15, 20):
+#         return 20
+#     else:
+#         return sum
+# print(sum(10, 6))
+# print(sum(10, 2))
+# print(sum(10, 12))
+
+#37. Write a Python program to display your details like name, age, address in three different lines
+# def personal_details():
+#     name, age = "Anu", 25
+#     address = "Mohali, Chandigarh, India"
+#     print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
+# personal_details()
+#38. Write a Python program to solve (x + y) * (x + y).
+# x= int(input("User Input Value1: "))
+# y= int(input("User Input Value2: "))
+# result = x * x + 2 * x * y + y * y
+# print(result)
+
+#39. Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years
+#  amt = 10000, int = 3.5, years = 7
+# amt = 10000
+# int = 3.5
+# years = 7
+# future_value = amt*((1+(0.01*int)) ** years)
+# print(round(future_value,2))
+
+#48. Write a Python program to parse a string to Float or Integer.
+# n = "348.3458"
+# print(float(n))
+# print(int(float(n)))
+
+#50. Write a Python program to print without newline or space.
+# for i in range(0, 10):
+#     print('*', end="")
+# print("\n")
